@@ -1,0 +1,15 @@
+{{- /*
+  Turns Sicarii-style !!!note text!!! into numbered Tufte sidenotes.
+
+  Runs on the rendered HTML, so markdown inside a note is already rendered.
+  Each match is replaced one at a time so every note gets its own id; the
+  number shown on the page comes from a CSS counter, not from these ids.
+*/ -}}
+{{- $content := string . -}}
+{{- $n := 0 -}}
+{{- range findRESubmatch `!!!([\s\S]*?)!!!` $content -}}
+  {{- $n = add $n 1 -}}
+  {{- $note := printf `<label for="sn-%d" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-%d" class="margin-toggle"/><span class="sidenote">%s</span>` $n $n (index . 1) -}}
+  {{- $content = replace $content (index . 0) $note 1 -}}
+{{- end -}}
+{{- $content | safeHTML -}}

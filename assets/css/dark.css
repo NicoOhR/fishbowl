@@ -1,0 +1,218 @@
+/* Site override of archie's dark.css (enabled by the nav toggle; see
+   static/js/themetoggle.js). Keeps the light theme's red accent in place of
+   archie's green, and replaces the stock blues and the light-blue code chips,
+   which glare against the dark background. */
+
+:root {
+  --darkMaincolor: red;         /* archie's dark accent; used by every rule below */
+  --bordercl: #9d7fd6;          /* rebeccapurple lifted so the rules read on #202124 */
+  --dark-muted: #9a9aa3;
+  --dark-surface: #2b2c31;
+  /* Sidenotes (assets/css/sidenotes.css): lifted note text; markers follow
+     the accent. */
+  --note-color: var(--dark-muted);
+  --note-accent: var(--darkMaincolor);
+}
+
+body {
+  color: #e8e8e8;
+  background-color: #202124;
+}
+
+::-moz-selection {
+  background: var(--darkMaincolor);
+  color: #000;
+  text-shadow: none;
+}
+
+::selection {
+  background: var(--darkMaincolor);
+  color: #000;
+  text-shadow: none;
+}
+
+hr {
+  border-top: 3px dotted var(--bordercl);
+}
+code {
+  background-color: var(--dark-surface);
+  color: #e8e8e8;
+  padding: 0.1em 0.2em;
+}
+pre {
+  background-color: #272822;
+  line-height: 1.4;
+  overflow-x: auto;
+  padding: 1em;
+}
+pre code {
+  background-color: transparent;
+  padding: 0;
+}
+blockquote {
+  border-color: var(--bordercl);
+  color: var(--dark-muted);
+}
+img {
+  border-color: var(--dark-surface);
+}
+.meta {
+  color: var(--dark-muted);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #ddd;
+}
+h1::before {
+  color: var(--darkMaincolor);
+  content: "# ";
+}
+h2::before {
+  color: var(--darkMaincolor);
+  content: "## ";
+}
+h3::before {
+  color: var(--darkMaincolor);
+  content: "### ";
+}
+h4::before {
+  color: var(--darkMaincolor);
+  content: "#### ";
+}
+h5::before {
+  color: var(--darkMaincolor);
+  content: "##### ";
+}
+h6::before {
+  color: var(--darkMaincolor);
+  content: "###### ";
+}
+
+.toc {
+  background-color: #272822;
+  color: white;
+}
+
+a {
+  border-bottom: 3px solid var(--darkMaincolor);
+  color: inherit;
+}
+a:hover {
+  background-color: var(--darkMaincolor);
+  color: black;
+}
+
+.site-description a {
+  color: #ddd;
+}
+.site-description a:hover {
+  color: black;
+}
+
+.tags a {
+  border-bottom: 3px solid var(--darkMaincolor);
+}
+.tags a:hover {
+  background-color: var(--darkMaincolor);
+  color: black;
+}
+
+.site-title a {
+  color: white;
+  text-decoration: none !important;
+}
+
+.header nav,
+.footer {
+  border-color: #333;
+}
+
+.highlight {
+  background-color: #333;
+}
+.soc:hover {
+  color: black;
+}
+.draft-label {
+  color: var(--darkMaincolor);
+  background-color: blue;
+}
+.highlight pre code[class=language-javaScript]::before,
+.highlight pre code[class="language-js"]::before {
+  content: "js";
+  background: #f7df1e;
+  color: black;
+}
+.highlight pre code[class*='language-yml']::before,
+.highlight pre code[class*='language-yaml']::before {
+  content: 'yaml';
+  background: #f71e6a;
+  color: white;
+}
+.highlight pre code[class*='language-shell']::before,
+.highlight pre code[class*='language-bash']::before,
+.highlight pre code[class*='language-sh']::before {
+  content: 'shell';
+  background: green;
+  color:white
+}
+.highlight pre code[class*='language-json']::before{
+  content: 'json';
+  background: dodgerblue;
+   color: #000000 
+}
+.highlight pre code[class*='language-python']::before,
+.highlight pre code[class*='language-py']::before {
+  content: 'py';
+  background: blue;
+  color: yellow ;
+}
+.highlight pre code[class*='language-css']::before{
+  content: 'css';
+  background: cyan;
+  color: black ;
+}
+.highlight pre code[class*='language-go']::before{
+  content: 'Go';
+  background: cyan;
+  color: royalblue ;
+}
+.highlight pre code[class*='language-md']::before,
+.highlight pre code[class*='language-md']::before{
+  content: 'Markdown';
+  background: royalblue;
+  color: whitesmoke ;
+}
+
+.callout-alert {
+  color: #ffffff;
+  background-color: transparent;
+  border-width: 3px;
+  border-style: solid;
+  border-color: #ff6347;
+}
+
+.callout-custom {
+  color: #ffffff;
+}
+
+.callout-tip {
+  color: #ffffff;
+  background-color: transparent;
+  border-width: 3px;
+  border-style: solid;
+  border-color: dodgerblue;
+}
+
+.callout-warning {
+  color: #ffffff;
+  background-color: transparent;
+  border-width: 3px;
+  border-style: solid;
+  border-color: #ffd700;
+}

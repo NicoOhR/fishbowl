@@ -1,0 +1,103 @@
+/* Tufte-style sidenotes and margin notes, ported from Sicarii's tufte.css.
+
+   Syntax (see layouts/partials/sidenotes.html and shortcodes/marginnote.html):
+     !!!numbered sidenote!!!
+     {{< marginnote >}}unnumbered note / citation{{< /marginnote >}}
+
+   Wide screens: the post column keeps archie's measure and the page grows a
+   right-hand gutter the notes float into. Narrow screens: no gutter, so notes
+   sit inline where they are referenced, set off by rules. */
+
+:root {
+  --note-gutter: 300px;  /* channel + note width */
+  --note-width: 260px;
+  /* --note-color and --note-accent are left unset here so dark.css can set
+     them on :root; the fallbacks below are the light-mode values. */
+}
+
+section.body {
+  counter-reset: sidenote-counter;
+}
+
+.sidenote,
+.marginnote {
+  float: right;
+  clear: right;
+  width: var(--note-width);
+  margin-right: calc(-1 * var(--note-gutter));
+  margin-top: 0.3rem;
+  margin-bottom: 0.8rem;
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 0.85rem;
+  line-height: 1.4;
+  color: var(--note-color, #6b6b7b);
+  text-align: left;
+  /* archie hangs list bullets with text-indent: -2ch, which would otherwise
+     be inherited and pull notes (and their markers) left inside a list. */
+  text-indent: 0;
+  position: relative;
+}
+
+.sidenote-number {
+  counter-increment: sidenote-counter;
+}
+
+.sidenote-number::after,
+.sidenote::before {
+  position: relative;
+  vertical-align: baseline;
+  font-weight: 700;
+  color: var(--note-accent, var(--maincolor));
+}
+
+.sidenote-number::after {
+  content: counter(sidenote-counter);
+  font-size: 0.7rem;
+  top: -0.5rem;
+  left: 0.1rem;
+}
+
+.sidenote::before {
+  content: counter(sidenote-counter) " ";
+  font-size: 0.7rem;
+  top: -0.4rem;
+}
+
+label.sidenote-number {
+  display: inline-block;
+  text-indent: 0;
+  max-height: 1.5rem;  /* keep the marker from stretching the line */
+}
+
+/* Notes are always visible, so the toggle checkbox is never shown. */
+input.margin-toggle {
+  display: none;
+}
+
+/* Only post pages (the ones with a section.body) get the gutter, so the home
+   and list pages keep archie's single column. The whole .content box widens,
+   header and footer included, so the page stays centred as one block. */
+@media screen and (min-width: 1100px) {
+  .content:has(section.body) {
+    max-width: calc(800px + var(--note-gutter));
+  }
+
+  .content:has(section.body) .post-content {
+    padding-right: var(--note-gutter);
+  }
+}
+
+@media screen and (max-width: 1099px) {
+  .sidenote,
+  .marginnote {
+    display: block;
+    float: none;
+    clear: both;
+    width: 100%;
+    margin: 1rem 0;
+    padding: 0.6rem 0;
+    border-top: 1px solid color-mix(in srgb, currentColor 30%, transparent);
+    border-bottom: 1px solid color-mix(in srgb, currentColor 30%, transparent);
+    font-size: 0.9rem;
+  }
+}

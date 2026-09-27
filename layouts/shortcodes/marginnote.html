@@ -1,0 +1,6 @@
+{{- /*
+  Unnumbered margin note, for citations and asides that don't need a marker:
+    {{< marginnote >}}Knuth, *The Art of Computer Programming*, vol. 1{{< /marginnote >}}
+*/ -}}
+<span class="marginnote">{{ .Inner | .Page.RenderString }}</span>
+{{- /**/ -}}

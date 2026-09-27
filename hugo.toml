@@ -1,31 +1,32 @@
-baseURL = "https://example.com"
+baseURL = "https://nicoohr.github.io/fishbowl/"
 languageCode = "en-us"
 title = "Fishbowl"
 theme="archie"
-copyright = "© Athul"
+copyright = "© Nico Ohayon Rozanes"
 pygmentsstyle = "monokai"
 pygmentscodefences = true
 pygmentscodefencesguesssyntax = true
 [params]
-	mode="light"
+	mode="toggle"
 	useCDN=false
+	customCSS = ["css/sidenotes.css"]
 
 [[params.social]]
 name = "GitHub"
 icon = "github"
-url = "https://github.com/athul/archie"
-
-[[params.social]]
-name = "Twitter"
-icon = "twitter"
-url = "https://twitter.com/athulcajay/"
+url = "https://github.com/NicoOhR"
 
 [[menu.main]]
 name = "About"
-url = "/"
+pageRef = "/"
 weight = 1
 
 [[menu.main]]
+name = "More Matter"
+url = "https://nicoohr.github.io/Sicarii/"
+weight = 2
+
+[[menu.main]]
 name = "Tags"
-url = "/tags"
+pageRef = "/tags"
 weight = 4
