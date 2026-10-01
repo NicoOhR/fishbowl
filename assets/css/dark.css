@@ -12,6 +12,9 @@
      the accent. */
   --note-color: var(--dark-muted);
   --note-accent: var(--darkMaincolor);
+  /* Headings and drop cap (assets/css/typography.css): the light theme's
+     #b3261e lifted so it reads on #202124. */
+  --accent-red: #cc3a30;
 }
 
 body {
@@ -58,39 +61,6 @@ img {
 }
 .meta {
   color: var(--dark-muted);
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: #ddd;
-}
-h1::before {
-  color: var(--darkMaincolor);
-  content: "# ";
-}
-h2::before {
-  color: var(--darkMaincolor);
-  content: "## ";
-}
-h3::before {
-  color: var(--darkMaincolor);
-  content: "### ";
-}
-h4::before {
-  color: var(--darkMaincolor);
-  content: "#### ";
-}
-h5::before {
-  color: var(--darkMaincolor);
-  content: "##### ";
-}
-h6::before {
-  color: var(--darkMaincolor);
-  content: "###### ";
 }
 
 .toc {

@@ -1,0 +1,70 @@
+/* Swaps archie's default fonts: Wittgenstein for prose, IM Fell English for
+   headings, JetBrains Mono for the monospace chrome (menu, dates) and code.
+   The site title keeps its own font. Loaded last via customCSS. */
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&family=JetBrains+Mono:ital,wght@0,400..700;1,400..700&family=UnifrakturMaguntia&family=Wittgenstein:ital,wght@0,400..700;1,400..700&display=swap');
+
+html {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+p,
+li,
+blockquote {
+  font-family: 'Wittgenstein', serif;
+}
+
+/* --accent-red (headings, drop cap) is left undefined here so the fallback
+   applies in light mode; dark.css defines a lighter red for the dark theme.
+
+   Headings are set in IM Fell English, a 17th-century printing type that sits
+   with the Dürer engraving, and stepped up from archie's flat 1.2rem. Post
+   titles in the home/list pages stay a size smaller than on the post itself. */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'IM Fell English', serif;
+  font-weight: normal;
+  color: var(--accent-red, #b3261e);
+}
+
+h1 { font-size: 2rem; }
+h2 { font-size: 1.6rem; }
+h3 { font-size: 1.35rem; }
+
+.list-item h1.title { font-size: 1.6rem; }
+
+/* Drops archie's markdown-style '#'/'##' heading markers. */
+h1::before, h2::before, h3::before,
+h4::before, h5::before, h6::before {
+  content: none;
+}
+
+/* Prose is set larger than archie's 15px base (Wittgenstein runs small) and
+   justified; the monospace chrome keeps the base size. */
+p,
+li,
+blockquote {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+p,
+li {
+  text-align: justify;
+}
+
+code,
+pre,
+.callout p {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+/* Red drop cap on the first paragraph of each post and of each post preview,
+   about three lines tall, set in the site-title font. */
+section.body > p:first-of-type::first-letter,
+.description > p:first-of-type::first-letter {
+  float: left;
+  font-family: 'something beautifont', serif;
+  font-size: 4.8rem;
+  line-height: 0.8;
+  padding: 0.35rem 0.5rem 0 0;
+  color: var(--accent-red, #b3261e);
+}

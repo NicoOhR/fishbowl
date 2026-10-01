@@ -1,7 +1,11 @@
 ---
-title: 'Our Difference'
-button: 'About us'
+title: "Our Difference"
+button: "About us"
 weight: 2
 ---
 
-Lorem ipsum dolor sit amet, et essent mediocritatem quo, choro volumus oporteat an mei. ipsum dolor sit amet, et essent mediocritatem quo,
+This is the other website of N. Ohayon Rozanes. Here I publish (read,
+regergitate) more or less everything that does not fit in with the cohort at
+Sicarii.
+
+

@@ -1,0 +1,16 @@
+{{- /*
+  Renders LaTeX at build time with KaTeX, so no math JS ships to the reader.
+  The KaTeX stylesheet is emitted once, on the first formula of each page.
+*/ -}}
+{{- if not (.Page.Store.Get "hasMath") -}}
+  {{- .Page.Store.Set "hasMath" true -}}
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.18.10/dist/katex.min.css" crossorigin="anonymous">
+{{- end -}}
+{{- $opts := dict "output" "htmlAndMathml" "displayMode" (eq .Type "block") -}}
+{{- with try (transform.ToMath .Inner $opts) -}}
+  {{- with .Err -}}
+    {{- errorf "Failed to render math in %s: %s" $.Page.File.Path . -}}
+  {{- else -}}
+    {{- .Value -}}
+  {{- end -}}
+{{- end -}}

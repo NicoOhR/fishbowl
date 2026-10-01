@@ -2,6 +2,8 @@
 	{{ if isset .Params "description" }}
 	{{ .Description }}
 	{{ else }}
-	{{ .Summary | replaceRE `!!![\s\S]*?!!!|<span class="marginnote">[\s\S]*?</span>` "" | safeHTML }}&hellip;
+	{{- /* Hugo summaries end on a paragraph boundary, which can run long, so the
+	     preview is cut to a fixed length (truncate supplies the ellipsis). */ -}}
+	<p>{{ .Summary | replaceRE `!!![\s\S]*?!!!|<span class="marginnote">[\s\S]*?</span>` "" | plainify | htmlUnescape | truncate 350 }}</p>
 	{{ end }}
 </div>
