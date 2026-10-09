@@ -9,11 +9,11 @@ intelligence that is to come, and I really have no standing to tell you about
 what it can and cannot do, what it will do, and what its greater implications
 towards humanity are. One specific niche to this conversation that I have staked
 out a little watchpost in has been interpretability research. This article
-partially expresses why I find this subject so interesting. More importantly, it
-should clarify what the claim "we don't understand how AI works" actually means.
-On its face the claim is a technical one: we don't understand how it works now,
-in the same way we did not understand the composition of an atom or we did not
-understand magnetism. In actuality, because of the type of object AI is, an
+partially expresses why I find this subject so interesting, and more
+importantly, it should clarify what the claim "we don't understand how AI works"
+actually means. On its face the claim is a technical one: we don't understand
+how it works now, in the same way we did not understand the composition of an
+atom or we did not understand magnetism. In actuality, because of AI is an
 object constructed by humans from end to end, the claim underlying "we don't
 understand how AI works" is an epistemological question: why is it that even
 with complete access, we comprehend so little of it? When claimed, the statement
@@ -23,7 +23,7 @@ I make the case that there is in fact a real limit of what we can understand
 about AI, that mathematics has been in this scenario before, and that current
 interpretability research already works as though it knows this. To argue this,
 we first must develop the ideas of Leibniz, Kant, and Hegel, only on the most
-perfunctory levels to allow us to use their ideas to our means. 
+perfunctory levels to allow us to use their ideas to our means.
 
 To be clear, I am not an interpretability researcher. I've just read the arXiv
 articles. Further, I am not a mathematician. I will only soon have an undergrad
@@ -47,11 +47,12 @@ without reason, and as such everything is in principle intelligible. "In
 principle intelligible" does not mean to Leibniz "intelligible *to us* on
 a finite horizon". He means that all truths can be arrived at through analysis,
 with some truths available only to an intelligence capable of infinite analysis.
-His correspondent Christian Wolff would popularize a version of Leibniz's
-philosophy, and eventually lent his name to one half of the explicitly named
-"Leibnizian-Wolffian philosophy", a label coined against his will. Roughly, this
-is the beginning of German rationalism, which was dominant in German academia
-until Immanuel Kant's *Critique of Pure Reason*.
+The language this analysis would take place on was dubbed the characteristica
+universalis. His correspondent Christian Wolff would popularize a version of
+Leibniz's philosophy, and eventually lent his name to one half of the explicitly
+named "Leibnizian-Wolffian philosophy", a label coined against his will.
+Roughly, this is the beginning of German rationalism, which was dominant in
+German academia until Immanuel Kant's *Critique of Pure Reason*.
 
 Kant, by responding to Wolff's dogmatism, forms the position he holds, which,
 for practical purposes, we mostly omit. What we extract from Kant is the upper
@@ -143,14 +144,92 @@ perhaps its esprit de corps. The process of mathematics, of making choices,
 exploring their consequences, and revising them again, did not change, but the
 expectation that one day we would find a perfect set of choices, one so natural
 and clear that it would hardly even constitute a choice, stopped being the
-organizing goal of the field. Instead, a program could be evaluated
-intrinsically: contradictions within it would arise and eventually be sublated
-back into it. In modern mathematics, we admit alternative foundations to build
-on, such as category theory and HoTT. Plurality is now far from a crisis.
+organizing goal of the field.!!!If I could ask you to specifically remember any
+one thing from this article, it would be this. Theorem proving is important and
+difficult, to be sure, and a great deal of the work that mathematicians do, or
+at this rate, did. However, it's still only one half of the process, choosing
+problems and the definitions which describe them is what prompts
+understanding!!! A program can now be evaluated intrinsically: contradictions
+within it would arise and eventually be sublated back into it. In modern
+mathematics, we admit alternative foundations to build on, such as category
+theory and HoTT. Plurality is now far from a crisis.
 
 This narrative of mathematics began with a Leibnizian ideal. Gödel presented
 a Kantian crisis to this ideal, wherein reason (an axiom system) working with
 its own tools draws its own limits. The process of mathematics does not change
 but becomes more explicitly Hegelian: contradictions from within a mathematical
 project lead to revisions and sublation.
+
+
+## An Application
+
+In computer science land (which shares a border with, and is often a vassal of,
+mathematicstan) the narrative progresses in a similar fashion and around the
+same time scale. Leibniz is often considered an early!!!sometimes, the
+earliest!!! computer scientist. He contributed a lot to early literature on the
+binary number system and possessed a well documented passion for calculators. As
+with anything else involving Leibniz, this was part of the larger philosophical
+project. Along with the dream of a universal logical language we discussed
+earlier, the characteristica universalis, Leibniz wrote on the calculus
+ratiocinator, a framework for calculation of that logical language. Norbert
+Wiener, "your favorite technologist's favorite technologist", suggested that
+Leibniz be considered the patron saint of cybernetics in his 1948 necronomicon
+"Cybernetics: Or Control and Communication in the Animal and the Machine".
+Direct technical influence is sometimes difficult to establish reasonably, but
+at least on the level of self-image, Leibniz is a central figure of the early
+thinking machine.
+
+About a century later, Babbage designed but never quite finished constructing
+what could be recognized as the first digital calculator, the difference
+engine!!!This title might be more correctly given to Napier's bones, though I am
+sure you'll forgive this trespass!!!. He and the Lady Augusta Ada King, Countess
+of Lovelace, would go on to write the first computer programs for the analytical
+engine, the successor to the difference engine which was also never constructed
+but fully designed. Lovelace herself enthusiastically took to the study of the
+analytical engine, translating Babbage's only lecture on the subject into
+English from a French attendee's notes, and appending to it her own notes which
+were about three times as long. In the first of her notes she says:
+
+> It may be desirable to explain, that by the word operation, we mean any
+> process which alters the mutual relation of two or more things, be this
+> relation of what kind it may. This is the most general definition, and would
+> include all subjects in the universe. […] But the science of operations, as
+> derived from mathematics more especially, is a science of itself, and has its
+> own abstract truth and value; just as logic has its own peculiar truth and
+> value, independently of the subjects to which we may apply its reasonings and
+> processes.
+
+Indeed, Lovelace dreamed Leibniz's dream. Eventually, Lovelace and Leibniz
+hoped, a science of operations which encodes all things independent of domain
+would emerge; this is the calculus ratiocinator. She states the other part of
+Leibniz we concern ourselves with, legability (the ability to understand things
+in principle) in the last of the notes: !!!This quote specifically was responded
+to in Alan Turing's [Computing Machinery and
+Intelligence](https://courses.cs.umbc.edu/471/papers/turing.pdf), which is
+a fascinating piece of very very early thinking-machine philosophy. His response
+to Lovelace's "objection" here is that machines surprise him all the time: her
+claim rests on the fallacy that once a fact is presented, all consequences
+appear in the mind at once. However, the computer allows us to explore the
+consequences of facts mechanistically. Is this "working out of consequences from
+data and general principles" not a sort of intelligence?!!!
+
+> The Analytical Engine has no pretensions whatever to originate any thing. It
+> can do whatever we know how to order it to perform. It can follow analysis;
+> but it has no power of anticipating any analytical relations or truths.
+
+This is the principle of sufficient reason, applied in a limited sense to the
+computer: all things the computer does follow the instructions set to it, and as
+such the analysis is, in principle, understood.
+
+We go on in this manner for another century and in that time calculators and
+computers which are both designed *and* constructed come about. One of the
+greats of that time was one Alan Turing, who likely requires no introduction.
+Turing presented a very similar result to Gödel for computability called the
+Halting Problem.!!!With a few nuances, Turing's problem and its generalization
+Rice's theorem present a basically equivalent "diagonal argument" to Gödel's
+first incompleteness theorem. I recommend, along with the rest of the blog,
+[Scott Aaronson's post on the matter](https://scottaaronson.blog/?p=710)!!! For
+those unfamiliar, or as a quick refresher:
+
+
 
