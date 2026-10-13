@@ -235,7 +235,7 @@ those unfamiliar, or as a quick refresher:
 
 - An algorithm is a well-defined set of instructions, which operates on some
 input
-- An algorithm either ends on it's own, or never halts.
+- An algorithm either ends on its own, or never halts.
 - For any particular program: Given a description of a program and an input,
 does the program eventually halt? 
 - The question Turing asked: Does there exist an algorithm which can decide if
@@ -245,18 +245,22 @@ As it turns out, for programs written for a machine of equivalent computational
 power to a Turing machine, there does not exist an algorithm which will always
 give you a yes or a no to Turing's halting problem. !!!Technically, Turing's
 1936 paper "On Computable Numbers" never refers to halting, for a full and
-rigorus timeline of how the problem came to be, I reccomend this [short paper on
+rigorous timeline of how the problem came to be, I recommend this [short paper on
 the
 subject](https://www.sciencedirect.com/science/article/pii/S235222082100050X)!!!
-As mentioned, this is similar to Godel's Kantian results, here, the axiom system
-of the machine, working with it own tools, demonstrates the limit of it can
-compute. At this point in our story we should expect that, following from the
-story of mathematics, the process of programming would not change so
-dramatically, but the self understanding of the practice would to fit the newly
-found limitations of programming. This was not the case.
+As mentioned, Turing's publication is similar to Gödel's Kantian results. Here,
+the axiom system which represents the machine and the programs that can be run
+on it, working with its own tools, demonstrates the limit of what it can compute.
+At this point in our story we should expect that, following from our retelling
+of mathematics, the process of programming would not change so dramatically, but
+the self understanding of the practice would adapt to fit the newly found
+limitations of programming. This was not the case. What happened was the exact
+opposite, where the process of computer science and programming would evolve
+dramatically, but the Leibnizian self understanding of its practitioners would
+remain constant. 
 
-
-
-
-
+Consider the tradition Charles Anthony Richard Hoare, or Tony Hoare if you can
+implement QuickSort from memory. Hoare's contribution ranged from algorithm
+design, programming language theory, and most importantly for us (though
+notably, less important to the field) formal verification.
 
