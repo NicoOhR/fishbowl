@@ -25,14 +25,16 @@ interpretability research already works as though it knows this. To argue this,
 we first must develop the ideas of Leibniz, Kant, and Hegel, only on the most
 perfunctory levels to allow us to use their ideas to our means.
 
-To be clear, I am not an interpretability researcher. I've just read the arXiv
-articles. Further, I am not a mathematician. I will only soon have an undergrad
-degree in the subject. And further yet, I am not a philosopher. I just like to
-read. I have tried to make this article accessible to the philosopher who does
-not know math, the mathematician who does not know how to program, and the
-programmer who does not know philosophy. As such, some of the ideas presented
-below are crude caricatures. I've attempted to maintain a bibliography for the
-interested reader to find out more from better qualified sources.
+To be clear, I am not an interpretability researcher, philosopher or
+mathematician. I've just read the arXiv articles. Further, I will soon have an
+undergrad degree in mathematics, and I just like to read. I have tried to make
+this article accessible to the philosopher who does not know math, the
+mathematician who does not know how to program, and the programmer who does not
+know philosophy, or any of the 3 choose 2 combinations of the above. As such,
+some of the ideas presented below are caricatures. For the interested reader,
+I have maintained a mostly complete bibliography which includes writings whose
+ideas did not quite make the cut, but which influenced my thinking none the
+less.
 
 
 ## A Background
@@ -230,6 +232,31 @@ Rice's theorem present a basically equivalent "diagonal argument" to Gödel's
 first incompleteness theorem. I recommend, along with the rest of the blog,
 [Scott Aaronson's post on the matter](https://scottaaronson.blog/?p=710)!!! For
 those unfamiliar, or as a quick refresher:
+
+- An algorithm is a well-defined set of instructions, which operates on some
+input
+- An algorithm either ends on it's own, or never halts.
+- For any particular program: Given a description of a program and an input,
+does the program eventually halt? 
+- The question Turing asked: Does there exist an algorithm which can decide if
+any program-input pair will terminate? 
+
+As it turns out, for programs written for a machine of equivalent computational
+power to a Turing machine, there does not exist an algorithm which will always
+give you a yes or a no to Turing's halting problem. !!!Technically, Turing's
+1936 paper "On Computable Numbers" never refers to halting, for a full and
+rigorus timeline of how the problem came to be, I reccomend this [short paper on
+the
+subject](https://www.sciencedirect.com/science/article/pii/S235222082100050X)!!!
+As mentioned, this is similar to Godel's Kantian results, here, the axiom system
+of the machine, working with it own tools, demonstrates the limit of it can
+compute. At this point in our story we should expect that, following from the
+story of mathematics, the process of programming would not change so
+dramatically, but the self understanding of the practice would to fit the newly
+found limitations of programming. This was not the case.
+
+
+
 
 
 
