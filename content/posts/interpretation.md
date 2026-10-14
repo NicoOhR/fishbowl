@@ -1,6 +1,8 @@
 ---
 title: "On Some Philosophy of Interpretability"
 date: 2026-09-30
+banner: "images/UnderweysungderMessung.png"
+bannerLink: "https://commons.wikimedia.org/wiki/File:Duerer_Underweysung_der_Messung_181.jpg"
 ---
 
 With increasing frequency I have been talking to friends and family of various
@@ -13,7 +15,7 @@ partially expresses why I find this subject so interesting, and more
 importantly, it should clarify what the claim "we don't understand how AI works"
 actually means. On its face the claim is a technical one: we don't understand
 how it works now, in the same way we did not understand the composition of an
-atom or we did not understand magnetism. In actuality, because of AI is an
+atom or we did not understand magnetism. In actuality, because AI is an
 object constructed by humans from end to end, the claim underlying "we don't
 understand how AI works" is an epistemological question: why is it that even
 with complete access, we comprehend so little of it? When claimed, the statement
@@ -33,11 +35,10 @@ mathematician who does not know how to program, and the programmer who does not
 know philosophy, or any of the 3 choose 2 combinations of the above. As such,
 some of the ideas presented below are caricatures. For the interested reader,
 I have maintained a mostly complete bibliography which includes writings whose
-ideas did not quite make the cut, but which influenced my thinking none the
-less.
+ideas did not quite make the cut, but which influenced my thinking nonetheless.
 
 
-## A Background
+## A Pedigree
 
 Gottfried Wilhelm Leibniz, of calculus fame, worked and derived before the
 separation proper of philosophy from the rest of the natural sciences. His
@@ -49,7 +50,7 @@ without reason, and as such everything is in principle intelligible. "In
 principle intelligible" does not mean to Leibniz "intelligible *to us* on
 a finite horizon". He means that all truths can be arrived at through analysis,
 with some truths available only to an intelligence capable of infinite analysis.
-The language this analysis would take place on was dubbed the characteristica
+The language this analysis would take place in was dubbed the characteristica
 universalis. His correspondent Christian Wolff would popularize a version of
 Leibniz's philosophy, and eventually lent his name to one half of the explicitly
 named "Leibnizian-Wolffian philosophy", a label coined against his will.
@@ -66,19 +67,19 @@ our cognition. The distinction is between "phenomena", which are things as they
 appear to us in space and time, and "noumena", which are things as they are in
 themselves apart from our faculties. We can think about noumena, but we cannot
 know noumena. This is a hard line which we may never cross. We do not interact
-with the world as a raw data stream but rather process it through the forms
-of intuition (space and time) and the concepts of the understanding (causality,
+with the world as a raw data stream but rather process it through the forms of
+intuition (space and time) and the concepts of the understanding (causality,
 among others). What we get back after interpreting reality through these is
-appearance, that is to say, reality is partially our
-own prescription. Critically, the argument is not that we should abandon the
-ambitions of science, say, a systematic understanding of the natural world, but
-that we must understand that this system is not something that can be held in
-hand. Another concept which we should make clear now is that Kant considered
-reason as being the object which critiques itself: reason, to him, is defendant,
-plaintiff and judge. Reason must play all three roles because reason can
-overreach when we apply it beyond where experience can check it. This is all
-very complex, and some gaps in understanding are to be expected. Let us forge on
-in full confidence, believing that as the argument develops, a more cohesive
+appearance, that is to say, reality is partially our own prescription.
+Critically, the argument is not that we should abandon the ambitions of science,
+say, a systematic understanding of the natural world, but that we must
+understand that this system is not something that can be held in hand. Another
+concept which we should make clear now is that Kant considered reason as being
+the object which critiques itself: reason, to him, is defendant, plaintiff and
+judge. Reason must play all three roles because reason can overreach when we
+apply it beyond where experience can check it. This is all very complex, and
+some gaps in understanding are to be expected. Let us forge on in full
+confidence, believing that as the argument develops, a more cohesive
 understanding will form.
 
 Some years later Georg Wilhelm Friedrich Hegel publishes a lot of famously
@@ -94,7 +95,7 @@ Many words have been written on it. Although presented chronologically, no
 approach entirely deprecates the last, and depending on who you are talking to,
 maybe not at all.
 
-## An Example
+## A Disappointment
 
 Having presented a condensed and grossly simplified interval of a strain of
 Western philosophy, I will present a similarly narrow history of mathematical
@@ -116,8 +117,8 @@ rigorous. Leibniz himself referred to infinitesimals as "useful fictions".
 Eventually, the $\varepsilon$-$\delta$ process operationalized a very similar
 looking idea which displaced the infinitesimal as the basis of analysis. Even
 so, Leibniz's "useful fictions" were nonfictionally successful. Even though we
-could not say exactly what an infinitesimal was, calculus worked, and we had
-bridges and kinematics to show for it.
+could not say exactly what an infinitesimal was, calculus worked, we had bridges
+and kinematics to show for it.
 
 Mathematicians pressed onwards in search of a universal calculus wherein we
 might describe all things. At the beginning of the 20th century, a series of
@@ -146,40 +147,47 @@ perhaps its esprit de corps. The process of mathematics, of making choices,
 exploring their consequences, and revising them again, did not change, but the
 expectation that one day we would find a perfect set of choices, one so natural
 and clear that it would hardly even constitute a choice, stopped being the
-organizing goal of the field.!!!If I could ask you to specifically remember any
-one thing from this article, it would be this. Theorem proving is important and
-difficult, to be sure, and a great deal of the work that mathematicians do, or
-at this rate, did. However, it's still only one half of the process, choosing
-problems and the definitions which describe them is what prompts
-understanding!!! A program can now be evaluated intrinsically: contradictions
-within it would arise and eventually be sublated back into it. In modern
-mathematics, we admit alternative foundations to build on, such as category
-theory and HoTT. Plurality is now far from a crisis.
+organizing goal of the field. With this new understanding, a research program
+can be evaluated intrinsically. The contradictions within it arise and are
+eventually sublated back into it. In modern mathematics, we admit alternative
+foundations to build on, such as category theory and HoTT. Plurality is now far
+from a crisis.
+
+
 
 This narrative of mathematics began with a Leibnizian ideal. Gödel presented
 a Kantian crisis to this ideal, wherein reason (an axiom system) working with
 its own tools draws its own limits. The process of mathematics does not change
 but becomes more explicitly Hegelian: contradictions from within a mathematical
-project lead to revisions and sublation.
+project lead to revisions and sublation.!!!For a more extensive source on the
+philosophy of mathematics, I recommend [Proofs and
+Refutations](https://www.cambridge.org/core/books/proofs-and-refutations/A11138AE31DB52797A6E4C3F1856E1CB) by
+Imre Lakatos.!!! If I could ask you to take away only one thing from this
+section, both for the purposes of this article but also as a generally important
+concept in mathematics, it's that while theorem proving is important and
+accounts for a great deal of the work that mathematicians do (or at this rate,
+did) it's still only one part of the process. Choosing problems and the
+definitions which describe them is what prompts understanding.!!!As the great
+Bernhard Reimann put it: "If only I had the theorems! Then I should find the
+proofs easily enough"!!! 
 
 
-## An Application
+## A Renewal
 
-In computer science land (which shares a border with, and is often a vassal of,
-mathematicstan) the narrative progresses in a similar fashion and around the
-same time scale. Leibniz is often considered an early!!!sometimes, the
-earliest!!! computer scientist. He contributed a lot to early literature on the
-binary number system and possessed a well documented passion for calculators. As
-with anything else involving Leibniz, this was part of the larger philosophical
-project. Along with the dream of a universal logical language we discussed
-earlier, the characteristica universalis, Leibniz wrote on the calculus
-ratiocinator, a framework for calculation of that logical language. Norbert
-Wiener, "your favorite technologist's favorite technologist", suggested that
-Leibniz be considered the patron saint of cybernetics in his 1948 necronomicon
-"Cybernetics: Or Control and Communication in the Animal and the Machine".
-Direct technical influence is sometimes difficult to establish reasonably, but
-at least on the level of self-image, Leibniz is a central figure of the early
-thinking machine.
+In computer science land the narrative progresses in a similar fashion and
+around the same time scale. Leibniz is often considered an early!!!sometimes,
+the earliest!!! computer scientist. He contributed a lot to early literature on
+the binary number system and possessed a well-documented passion for
+calculators. As with anything else involving Leibniz, this was part of the
+larger philosophical project. Along with the dream of a universal logical
+language we discussed earlier, the characteristica universalis, Leibniz wrote on
+the calculus ratiocinator, a framework for calculation of that logical language.
+Norbert Wiener, "your favorite technologist's favorite technologist", suggested
+that Leibniz be considered the patron saint of cybernetics in his 1948
+necronomicon "Cybernetics: Or Control and Communication in the Animal and the
+Machine". Direct technical influence is sometimes difficult to establish
+reasonably, but at least on the level of self-image, Leibniz is a central figure
+of the early thinking machine.
 
 About a century later, Babbage designed but never quite finished constructing
 what could be recognized as the first digital calculator, the difference
@@ -204,8 +212,8 @@ were about three times as long. In the first of her notes she says:
 Indeed, Lovelace dreamed Leibniz's dream. Eventually, Lovelace and Leibniz
 hoped, a science of operations which encodes all things independent of domain
 would emerge; this is the calculus ratiocinator. She states the other part of
-Leibniz we concern ourselves with, legability (the ability to understand things
-in principle) in the last of the notes: !!!This quote specifically was responded
+Leibniz we concern ourselves with, legibility (the ability to understand things
+in principle), in the last of the notes: !!!This quote specifically was responded
 to in Alan Turing's [Computing Machinery and
 Intelligence](https://courses.cs.umbc.edu/471/papers/turing.pdf), which is
 a fascinating piece of very very early thinking-machine philosophy. His response
@@ -234,33 +242,61 @@ first incompleteness theorem. I recommend, along with the rest of the blog,
 those unfamiliar, or as a quick refresher:
 
 - An algorithm is a well-defined set of instructions, which operates on some
-input
+input.
 - An algorithm either ends on its own, or never halts.
 - For any particular program: Given a description of a program and an input,
-does the program eventually halt? 
+does the program eventually halt?
 - The question Turing asked: Does there exist an algorithm which can decide if
-any program-input pair will terminate? 
+any program-input pair will terminate?
 
 As it turns out, for programs written for a machine of equivalent computational
 power to a Turing machine, there does not exist an algorithm which will always
 give you a yes or a no to Turing's halting problem. !!!Technically, Turing's
-1936 paper "On Computable Numbers" never refers to halting, for a full and
-rigorous timeline of how the problem came to be, I recommend this [short paper on
-the
-subject](https://www.sciencedirect.com/science/article/pii/S235222082100050X)!!!
-As mentioned, Turing's publication is similar to Gödel's Kantian results. Here,
-the axiom system which represents the machine and the programs that can be run
-on it, working with its own tools, demonstrates the limit of what it can compute.
-At this point in our story we should expect that, following from our retelling
-of mathematics, the process of programming would not change so dramatically, but
-the self understanding of the practice would adapt to fit the newly found
-limitations of programming. This was not the case. What happened was the exact
-opposite, where the process of computer science and programming would evolve
-dramatically, but the Leibnizian self understanding of its practitioners would
-remain constant. 
+1936 paper "On Computable Numbers" never refers to halting. For a full and
+rigorous timeline of how the problem came to be, I recommend this [short paper
+on the subject][halting]!!! As mentioned, Turing's publication is similar to
+Gödel's Kantian results. Here, the machine, working with its own tools,
+demonstrates the limit of what it can compute. At this point in our story we
+should expect that, following from our retelling of mathematics, the process of
+programming would not change so dramatically, but the self-understanding of the
+practice would adapt to fit the newly found limitations of programming. What
+happened was the exact opposite: while the process of computer science and
+programming would evolve dramatically, the Leibnizian self-understanding of its
+practitioners would remain constant.
 
-Consider the tradition Charles Anthony Richard Hoare, or Tony Hoare if you can
-implement QuickSort from memory. Hoare's contribution ranged from algorithm
-design, programming language theory, and most importantly for us (though
-notably, less important to the field) formal verification.
+Consider the tradition of Charles Anthony Richard Hoare, or just Tony Hoare, for
+those of us who can implement QuickSort from memory. It's difficult to overstate
+how important Hoare was to computer science. Hoare's contributions spanned
+algorithm design, programming language theory, and most importantly for us
+(though notably, less important to the field) formal verification. In the paper
+that established formal verification as a possible goal for the field, "An
+Axiomatic Basis for Computer Programming" (1969), Hoare begins:
+
+> Computer programming is an exact science in that all the properties of
+> a program and all the consequences of executing it in any given environment
+> can, in principle, be found out from the text of the program itself by means
+> of purely deductive reasoning.
+
+Turing had already demonstrated that this is not the case in general. What are
+we to make of Hoare's statement then? What Hoare is stating is an aspiration,
+a sort of justification for his methodology. Later, in his 1980 ACM Turing Award
+lecture, he makes the pithy and now widely quoted remark:
+
+> I conclude that there are two ways of constructing a software design: One way
+> is to make it so simple that there are obviously no deficiencies and the other
+> way is to make it so complicated that there are no obvious deficiencies.
+
+That is to say, so long as we restrict ourselves to a particular class of
+programs, we should be able to deduce what a program does and what properties it
+possesses. This is a fair stipulation: ultimately, programs serve a
+human-designated purpose by design in a way that mathematical objects do not
+always. The nature of the work that programmers engage in essentially allows
+them to maintain a basically Leibnizian self-identity, and for most computer
+programs, this is not an incorrect approach. Note, *most* computer programs.
+
+## An Interpretation
+
+
+
+[halting]: https://doi.org/10.1016/j.jlamp.2021.100687
 
